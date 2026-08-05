@@ -2800,39 +2800,110 @@ ul, ol {
     box-shadow: var(--shadow-lg);
 }
 
-/* TikTok Videos Section (Homepage) */
+/* TikTok Section (Homepage) */
 .tiktok-videos-section {
     background: var(--off-white);
 }
 
-.tiktok-video-grid {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-.tiktok-video-card {
-    max-width: 600px;
-    width: 100%;
-    min-height: 600px;
+.tiktok-home-card {
+    max-width: 480px;
+    margin: 40px auto 0;
     background: var(--white);
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    padding: 36px 32px;
     box-shadow: var(--shadow-md);
     border: 1px solid var(--gray-200);
+    text-align: center;
+}
+
+.tiktok-home-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.tiktok-home-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--white);
+    font-size: 1.3rem;
+    flex-shrink: 0;
 }
 
-.tiktok-video-card blockquote {
-    margin: 0 !important;
-    width: 100% !important;
+.tiktok-home-info {
+    text-align: left;
 }
 
-.tiktok-cta-wrap {
-    text-align: center;
-    margin-top: 10px;
+.tiktok-home-info h4 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 2px;
+}
+
+.tiktok-home-info p {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+}
+
+.tiktok-home-header .btn-sm {
+    margin-left: auto;
+    padding: 8px 18px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+}
+
+.tiktok-home-highlights {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.tiktok-home-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 18px;
+    border-radius: var(--radius-md);
+    background: var(--off-white);
+    flex: 1;
+}
+
+.tiktok-home-item i {
+    font-size: 1.2rem;
+    color: var(--accent-dark);
+}
+
+.tiktok-home-item span {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tiktok-home-desc {
+    font-size: 0.92rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.tiktok-home-card .btn-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* ============================================
