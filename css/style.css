@@ -2744,6 +2744,41 @@ ul, ol {
     box-shadow: var(--shadow-lg);
 }
 
+/* TikTok Videos Section (Homepage) */
+.tiktok-videos-section {
+    background: var(--off-white);
+}
+
+.tiktok-video-grid {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.tiktok-video-card {
+    max-width: 600px;
+    width: 100%;
+    min-height: 600px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tiktok-video-card blockquote {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.tiktok-cta-wrap {
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
