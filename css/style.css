@@ -416,13 +416,14 @@ ul, ol {
 
 /* Scrolled navbar state */
 .navbar.scrolled .btn-schedule {
-    background: transparent;
-    color: var(--accent-dark);
+    background: var(--accent);
+    color: var(--white);
     border-color: var(--accent);
 }
 
 .navbar.scrolled .btn-schedule:hover {
-    background: var(--accent);
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
     color: var(--white);
 }
 
