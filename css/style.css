@@ -2133,6 +2133,21 @@ ul, ol {
     border: 0;
 }
 
+.glofox-credit {
+    text-align: center;
+    margin: 12px 0 4px;
+    font-size: 0.8rem;
+}
+
+.glofox-credit a {
+    color: var(--gray-500);
+    transition: color 0.2s ease;
+}
+
+.glofox-credit a:hover {
+    color: var(--accent);
+}
+
 .booking-help {
     margin-top: 32px;
     text-align: center;
