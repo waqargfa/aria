@@ -1390,6 +1390,97 @@ ul, ol {
     margin-right: 4px;
 }
 
+/* Class Banner Cards */
+.classes-banner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.class-banner {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.class-banner:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.class-banner-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.class-banner:hover .class-banner-bg {
+    transform: scale(1.05);
+}
+
+.class-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 15, 15, 0.65);
+    transition: background 0.4s ease;
+}
+
+.class-banner:hover .class-banner-overlay {
+    background: rgba(20, 15, 15, 0.55);
+}
+
+.class-banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.class-banner-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 500;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.class-banner-level {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
+.class-banner-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    max-width: 320px;
+}
+
 /* ============================================
    EXPERIENCE SECTION
    ============================================ */
@@ -2912,6 +3003,10 @@ ul, ol {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .classes-banner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .whyus-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -3029,6 +3124,12 @@ ul, ol {
     }
 
     .classes-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .classes-banner-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
         margin: 0 auto;
