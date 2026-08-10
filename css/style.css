@@ -1478,6 +1478,39 @@ ul, ol {
     background: var(--cream);
 }
 
+.schedule-legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.legend-women {
+    background: #fdf2f8;
+    border: 1px solid #f9a8d4;
+    color: #9d174d;
+}
+
+.legend-mixed {
+    background: #eff6ff;
+    border: 1px solid #93c5fd;
+    color: #1e40af;
+}
+
+.legend-item i {
+    font-size: 1.1rem;
+}
+
 .schedule-wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -2856,8 +2889,70 @@ ul, ol {
 }
 
 /* TikTok Section (Homepage) */
-.tiktok-videos-section {
+.tiktok-videos-section,
+.social-videos-section {
     background: var(--off-white);
+}
+
+.social-feeds-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 44px;
+}
+
+.social-feed-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-feed-frame {
+    width: 100%;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.social-feed-frame .tiktok-embed,
+.social-feed-frame .instagram-media {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.social-loading {
+    text-align: center;
+    color: var(--gray-500);
+    padding: 40px 20px;
+}
+
+.social-loading i {
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: block;
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+.social-loading p {
+    font-size: 0.95rem;
+}
+
+.social-loading a {
+    color: var(--accent-dark);
+    font-weight: 600;
+}
+
+.social-cta-wrap {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .tiktok-feed-wrap {
@@ -3029,6 +3124,10 @@ ul, ol {
 @media (max-width: 768px) {
     :root {
         --section-padding: 60px;
+    }
+
+    .social-feeds-grid {
+        grid-template-columns: 1fr;
     }
 
     .benefits-grid {
