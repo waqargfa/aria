@@ -3,35 +3,7 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // ============================================
-    // PRELOADER
-    // ============================================
-    const preloader = document.getElementById('preloader');
-    const preloaderPercent = document.querySelector('.preloader-percent');
 
-    // Animate preloader percentage
-    if (preloaderPercent) {
-        let pct = 0;
-        const pctInterval = setInterval(() => {
-            pct += Math.floor(Math.random() * 8) + 3;
-            if (pct >= 100) {
-                pct = 100;
-                clearInterval(pctInterval);
-            }
-            preloaderPercent.textContent = pct + '%';
-        }, 90);
-    }
-
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('loaded');
-        }, 1800);
-    });
-
-    // Fallback in case load event already fired
-    setTimeout(() => {
-        preloader.classList.add('loaded');
-    }, 2500);
 
     // ============================================
     // HERO IMAGE SLIDER
