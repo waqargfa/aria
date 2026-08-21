@@ -630,6 +630,7 @@ ul, ol {
     position: relative;
     overflow: hidden;
     padding-top: 80px;
+    padding-bottom: 180px;
 }
 
 /* Hero Image Slider */
